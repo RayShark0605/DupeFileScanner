@@ -133,7 +133,7 @@ static std::string BuildDuplicateReport(const std::vector<std::string>& sourceDi
 int main(int argc, char* argv[])
 {
     GB_SetConsoleEncodingToUtf8();
-    
+    GB_SetLogToConsole(true);
 
     std::vector<std::string> sourceDirsUtf8;
     sourceDirsUtf8.reserve(static_cast<size_t>(std::max(argc - 1, 0)));
